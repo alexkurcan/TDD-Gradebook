@@ -1,6 +1,6 @@
 def letter_grade(score):
     if not isinstance(score, (int, float)):
-        raise TypeError("score must be a number")
+        raise TypeError("Score must be a number")
 
     if score >= 90:
         return "A"
@@ -15,15 +15,19 @@ def letter_grade(score):
 
 def is_passing(score):
     if not isinstance(score, (int, float)):
-        raise TypeError("score must be a number")
+        raise TypeError("Score must be a number")
     return score >= 60
 
 def average(scores):
     if not isinstance(scores, list):
         raise TypeError("Scores must be a list")
+
     if len(scores) == 0:
         raise ValueError("Scores list cannot be empty")
     return round(sum(scores) / len(scores), 2)
+    
+    if not all(isinstance(s, (int, float)) for s in scores):
+        raise TypeError("All scores must be numbers")
 
 def curved_score(score, bonus):
     pass
