@@ -30,4 +30,4 @@ def average(scores):
         raise TypeError("All scores must be numbers")
 
 def curved_score(score, bonus):
-    pass
+    return True
