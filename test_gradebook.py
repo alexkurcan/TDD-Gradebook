@@ -16,4 +16,4 @@ def test_letter_grade(score, expected):
 
 def test_letter_grade_invaild_type():
     with pytest.raises(TypeError):
-        letter_grade("hello")
+       letter_grade("hello")
