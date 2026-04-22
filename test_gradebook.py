@@ -34,5 +34,5 @@ def test_average_works():
     assert average([80, 90, 70]) == 80.0
 
 def test_average_empty_list():
-    with pytest.raises(VauleError):
+    with pytest.raises(ZeroDivisionError):
         average([])
