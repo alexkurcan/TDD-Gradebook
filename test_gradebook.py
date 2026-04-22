@@ -47,4 +47,4 @@ def test_avergae_bad_items():
 
 # Testing curved_score function ------------------------------
 def test_curved_score_basic():
-    assert curve_score(80, 5) == 85
+    assert curved_score(80, 5) == 85
